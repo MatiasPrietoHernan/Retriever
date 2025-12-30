@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  search-api:
+    build: .
+    restart: unless-stopped
+    environment:
+      QDRANT_URL: ${QDRANT_URL}
+      QDRANT_API_KEY: ${QDRANT_API_KEY}
+      COLLECTION_NAME: ${COLLECTION_NAME}
+      MODEL_EMBEDDING: ${MODEL_EMBEDDING}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      API_KEY: ${API_KEY}
+      WORKERS: ${WORKERS}
