@@ -6,3 +6,6 @@ __pycache__/
 .idea/
 .vscode/
 *.log
+main_script.py
+app.log
+app_error.log

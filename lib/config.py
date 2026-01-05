@@ -14,6 +14,6 @@ config = {
     "api_key": os.getenv("API_KEY")
 }
 
-client = QdrantClient(url=config["qdrant_url"], api_key=config["qdrant_key"])
+client = QdrantClient(url=config["qdrant_url"])
 embeddings = OpenAIEmbeddings(model=config["embedding_model"])
 sparse_embeddings = SparseTextEmbedding(model_name="Qdrant/bm25")

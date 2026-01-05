@@ -23,3 +23,8 @@ class TaskStatusResponse(BaseModel):
     count: Optional[int] = None
     error: Optional[str] = None
     meta: Optional[dict] = None
+
+class IngestsProperties(BaseModel):
+    company:str
+    tokko_api_key:str
+    
